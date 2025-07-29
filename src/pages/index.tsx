@@ -30,9 +30,9 @@ export default function Home() {
           <h1 className="mb-4 text-lg md:text-xl">Projects</h1>
           <div>
             {Projects.map((project) => (
-            <Link key={project.id} href={project.link}
+            
               <div key={project.id} className="mb-5 flex items-center gap-3">
-                
+              <Link key={project.id} href={project.link}    
                 <Image
                   className="md:w-50 md:h-50 mb-3 h-[40px] w-[40px]"
                   src={project.image}
@@ -46,8 +46,9 @@ export default function Home() {
                     {project.description}
                   </p>
                 </div>
+                </Link>
               </div>
-      </Link>
+      
             ))}
           </div>
         </div>
