@@ -1,38 +1,61 @@
+import { FiGithub, FiLinkedin, FiInstagram, FiYoutube, FiMail } from "react-icons/fi";
+import { FaDev } from "react-icons/fa";
+import { SiLastdotfm, SiSpotify } from "react-icons/si";
+import { AiOutlineX } from "react-icons/ai";
+
 export const Connect = [
   {
     id: 1,
-    image: "/images/social/x.png",
-    name: "x",
-    link: "https://x.com",
+    name: "Github",
+    link: "https://github.com/ajtruex",
+    icon: FiGithub,
   },
   {
     id: 2,
-    image: "/images/social/github.png",
-    name: "github",
-    link: "https://github.com",
+    name: "X.com",
+    link: "https://x.com/web___guy",
+    icon: AiOutlineX,
   },
   {
     id: 3,
-    image: "/images/social/linkedin.png",
-    name: "linkedin",
-    link: "https://linkedin.com",
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/ajtruex/",
+    icon: FiLinkedin,
   },
   {
     id: 4,
-    image: "/images/social/youtube.png",
-    name: "youtube",
-    link: "https://youtube.com",
+    name: "Dev.to",
+    link: "https://dev.to/truex",
+    icon: FaDev,
   },
   {
     id: 5,
-    image: "/images/social/dribbble.png",
-    name: "dribbble",
-    link: "https://dribbble.com",
+    name: "Last.fm",
+    link: "https://www.last.fm/user/ajtruex",
+    icon: SiLastdotfm,
   },
   {
     id: 6,
-    image: "/images/social/instagram.png",
-    name: "instagram",
-    link: "https://instagram.com",
+    name: "Spotify",
+    link: "https://open.spotify.com/user/andrewtruex",
+    icon: SiSpotify,
+  },
+  {
+    id: 7,
+    name: "YouTube",
+    link: "https://www.youtube.com/@andrewtruex",
+    icon: FiYoutube,
+  },
+  {
+    id: 8,
+    name: "Instagram",
+    link: "https://www.instagram.com/atruedev/",
+    icon: FiInstagram,
+  },
+  {
+    id: 9,
+    name: "Email",
+    link: "mailto:andrewtruex@gmail.com",
+    icon: FiMail,
   },
 ];
