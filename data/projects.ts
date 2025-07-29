@@ -1,5 +1,6 @@
-export const Projects = [
+export const projects = [
   {
+    id: 1,
     name: "WhoSampled Raycast Extension",
     description:
       "Search WhoSampled.com from the currently playing song in Spotify",
@@ -15,6 +16,7 @@ export const Projects = [
     ],
   },
   {
+    id: 2,
     name: "Spoqify Raycast Extension",
     description:
       "Spoqify is an MIT-licensed dead-simple service that allows you to access Spotify playlists like an anonymous user",
@@ -30,6 +32,7 @@ export const Projects = [
     ],
   },
   {
+    id: 3,
     name: "User Links",
     description:
       "A place to put all your project links and social media profiles.",
@@ -44,6 +47,7 @@ export const Projects = [
     ],
   },
   {
+    id: 4,
     name: "Portfolio",
     description: "My personal portfolio website built with Next.js.",
     image: "/next-portfolio2.png",
@@ -59,6 +63,7 @@ export const Projects = [
     ],
   },
   {
+    id: 5,
     name: "Next Movies",
     description: "A movie review aggregator made with Next.js.",
     image: "/next-movies.png",
@@ -73,6 +78,7 @@ export const Projects = [
     ],
   },
   {
+    id: 6,
     name: "BS Upcycled Home Decor",
     description:
       "A website for a local business built with Next.js featuring an image gallery.",
@@ -89,6 +95,7 @@ export const Projects = [
     ],
   },
   {
+    id: 7,
     name: "Vue.js Portfolio",
     description: "My old personal portfolio website built with Vue.js.",
     image: "/portfolio2.png",
@@ -103,6 +110,7 @@ export const Projects = [
     ],
   },
   {
+    id: 8,
     name: "MovieVuer",
     description: "A movie review aggregator made with Vue.js.",
     image: "/movievuer.png",
