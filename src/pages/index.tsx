@@ -56,7 +56,7 @@ export default function Home() {
                 <div key={social.id} className="flex flex-row">
                   <Image
                     className="mb-3 h-[30px] w-[30px] md:h-8 md:w-8"
-                    src={social.icon}
+                    src={social.image}
                     width="30"
                     height="30"
                     alt={social.name}
