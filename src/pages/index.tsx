@@ -16,7 +16,7 @@ export default function Home() {
         <div className="mb-10">
           <Image
             className="mb-3"
-            src="/images/user.png"
+            src="/images/memoji-mac.png"
             width="25"
             height="25"
             alt="Smile icon"
