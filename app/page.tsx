@@ -1,16 +1,13 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Projects } from "../../data/projects";
-import { Stack } from "../../data/stack";
-import { Connect } from "../../data/connect";
+import { Projects } from "../data/projects";
+import { Stack } from "../data/stack";
+import { Connect } from "../data/connect";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center  p-10 md:p-24 ${inter.className} bg-black text-white`}
+      className="flex min-h-screen flex-col items-center  p-10 md:p-24 bg-black text-white"
     >
       <div>
         <div className="mb-10">
