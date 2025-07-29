@@ -21,9 +21,9 @@ export default function Home() {
             height="25"
             alt="Smile icon"
           />
-          <h1 className="mb-2 text-xl">John Doe</h1>
+          <h1 className="mb-2 text-xl">Andrew Truex</h1>
           <p className="text-md max-w-2xl text-white opacity-50 lg:text-lg">
-            About Me paragraph
+I'm a web developer with a focus on unique web experiences and products, inspired by culture, film, and innovation.
           </p>
         </div>
         <div className="mb-10">
