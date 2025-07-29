@@ -70,7 +70,7 @@ export default function Home() {
           <h1 className="mb-4 text-lg md:text-xl">Connect</h1>
           <div className="flex  gap-5 md:gap-8">
             {Connect.map((social) => (
-               <Link key={social.id} href={social.link}>
+                     <Link key={social.id} href={social.link}>
         <div className="flex flex-row">
           {/* Render the icon as a React component */}
           {social.icon && (
@@ -79,6 +79,8 @@ export default function Home() {
               title={social.name}
             />
           )}
+        </div>
+      </Link>
             ))}
           </div>
         </div>
