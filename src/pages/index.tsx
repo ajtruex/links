@@ -70,17 +70,15 @@ export default function Home() {
           <h1 className="mb-4 text-lg md:text-xl">Connect</h1>
           <div className="flex  gap-5 md:gap-8">
             {Connect.map((social) => (
-              <Link key={social.id} href={social.link}>
-                <div className="flex flex-row">
-                  <Image
-                    className="mb-3 h-[30px] w-[30px] md:h-8 md:w-8"
-                    src={social.icon}
-                    width="30"
-                    height="30"
-                    alt={social.name}
-                  />
-                </div>
-              </Link>
+               <Link key={social.id} href={social.link}>
+        <div className="flex flex-row">
+          {/* Render the icon as a React component */}
+          {social.icon && (
+            <social.icon
+              className="mb-3 h-[30px] w-[30px] md:h-8 md:w-8"
+              title={social.name}
+            />
+          )}
             ))}
           </div>
         </div>
