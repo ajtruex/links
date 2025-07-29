@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Projects } from "../../data/projects";
+import { projects } from "../../data/projects";
 import { Stack } from "../../data/stack";
 import { Connect } from "../../data/connect";
 import Link from "next/link";
@@ -29,20 +29,43 @@ export default function Home() {
         <div className="mb-10">
           <h1 className="mb-4 text-lg md:text-xl">Projects</h1>
           <div>
-            {Projects.map((project) => (
+            {projects.map((project) => (
               <div key={project.id} className="mb-5 flex items-center gap-3">
                 <Image
                   className="md:w-50 md:h-50 mb-3 h-[40px] w-[40px]"
                   src={project.image}
                   width="50"
                   height="50"
-                  alt="Smile icon"
+                  alt={project.name}
                 />
                 <div>
                   <h1>{project.name}</h1>
                   <p className="mt-1 w-auto text-sm text-white opacity-50 md:w-full">
-                    {project.subtitle}
+                    {project.description}
                   </p>
+                  {/* Optional: Show links */}
+                  <div className="flex gap-2 mt-1">
+                    {project.link && (
+                      <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                        <span className="underline text-blue-400">Demo</span>
+                      </Link>
+                    )}
+                    {project.github && (
+                      <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                        <span className="underline text-blue-400">Source</span>
+                      </Link>
+                    )}
+                  </div>
+                  {/* Optional: Show tools */}
+                  {project.tools && (
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {project.tools.map((tool, idx) => (
+                        <span key={idx} className="bg-gray-700 px-2 py-1 rounded text-xs">
+                          {tool.name}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
